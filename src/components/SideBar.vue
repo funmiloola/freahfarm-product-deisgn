@@ -40,11 +40,16 @@ export default {
     font-size: 18px;
     cursor:pointer;
  }
+ .sidebar{
+    display:none;
+ }
+ @media (max-width:992px){
 .sidebar{
     display: flex;
     flex-direction: column;
     gap:2rem;
 }
+ }
  .nav-btns{
     display:flex;
     flex-direction: column;

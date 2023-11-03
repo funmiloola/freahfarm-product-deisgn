@@ -3,9 +3,11 @@
     <div class="order">
     <h1>Just <span>Eat healthy</span> food to live a healthier Life</h1>
     <p>Enjoy a healthy life by eating healthy meals that have extraordinary flavors that make your life healthier for today and in the future</p>
+    <div class="btn">
     <button>Order Now</button>
     </div>
-    <div>
+    </div>
+    <div class="image-section">
    <img src="@/assets/images/unsplash_xeTv9N2FjXA.svg">
     </div>
   </div>
@@ -23,6 +25,11 @@ export default {
     margin:0;
     padding:0;
 }
+@media(max-width:992px){
+    *{
+        margin:0;
+    }
+}
  .hero-section{
     display:flex;
     max-width: 1280px;
@@ -33,8 +40,8 @@ export default {
  }
  @media (max-width:992px){
     .hero-section{
-        max-width: 900px;
-        display:block;
+        /* max-width: 900px; */
+        display:inline-block;
     }
  }
  h1{
@@ -50,7 +57,7 @@ export default {
         height: auto;    
        text-align: center;
        font-size:56px;
-       padding-top:12px;
+       padding-top:16px;
     }
  }
 span{
@@ -69,8 +76,12 @@ p{
 @media(max-width:992px){
     p{
       text-align: center; 
+      font-size:16px;
 
     }
+}
+.btn{
+    padding-top:32px;
 }
 button{
     padding:20px 45px 20px 45px;
@@ -81,11 +92,22 @@ button{
     font-size:18px;
     font-family:inter;
     font-weight: 700;
-    margin-top:32px;
 }
 @media(max-width:992px){
-    button{
-
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top:32px;
+    }
+}
+@media(max-width:992px){
+    .image-section{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding-top:36px;
+       
     }
 }
 img{
@@ -94,6 +116,9 @@ img{
 @media (max-width:992px){
     img{
        width:400px;
+       
+      
+       
     }
 }
 </style>

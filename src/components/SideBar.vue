@@ -45,9 +45,15 @@ export default {
  }
  @media (max-width:992px){
 .sidebar{
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
+    padding:0;
+     display: flex;
+     flex-direction: column;
+     gap:2rem;
+     position: fixed;
+     background: #fff;
+     width:100vw;
+     left:0
+     
 }
  }
  .nav-btns{

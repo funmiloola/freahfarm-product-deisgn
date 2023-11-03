@@ -13,9 +13,9 @@
       <button class="login-btn">Login</button>
       <button class="order-btn">Order Now</button>
     </div>
-    <div class="nav-icon">
-      <img src="@/assets/images/icon-menu.svg" alt="" id="icon-menu" v-if="showIcon" @click="toggleIcon">
-      <img src="@/assets/images/icon-close.svg" alt="" id="icon-close" v-else @click="toggleIcon">
+    <div class="nav-icon" @click="toggleIcon">
+      <img src="@/assets/images/icon-menu.svg" alt="" id="icon-menu" v-if="showIcon" >
+      <img src="@/assets/images/icon-close.svg" alt="" id="icon-close" v-else>
     </div>
   </nav>
   <side-bar v-if="showSidebar"/>
@@ -32,7 +32,8 @@ export default {
     return {
       navs: ["Home", "About", "Contact Us", "Testimonials"],
       showIcon:true,
-      showSidebar:false
+      showSidebar:false,
+      iconSource:[require('@/assets/images/icon-menu.svg'),require('@/assets/images/icon-close.svg')]
     };
   },
   methods:{

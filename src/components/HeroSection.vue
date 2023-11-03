@@ -33,9 +33,8 @@ export default {
  }
  @media (max-width:992px){
     .hero-section{
-         flex-direction: column;
-         max-width:100vw;
-         margin:0 auto;
+        max-width: 900px;
+        display:block;
     }
  }
  h1{
@@ -46,22 +45,32 @@ export default {
     height:249px;
  }
  @media(max-width:992px){
-    h1{
-        font-size:56px;
+    h1{    
+        width:auto;
+        height: auto;    
+       text-align: center;
+       font-size:56px;
+       padding-top:12px;
     }
  }
 span{
     color:#008000;
 }
 p{
-    width:421px;
-    height:98px;
+    /* width:421px;
+    height:98px; */
     font-family:inter;
     font-weight:500;
     font-size:20px;
     color:#3A3A3A;
     line-height:32.4px;
     padding-top:32px;
+}
+@media(max-width:992px){
+    p{
+      text-align: center; 
+
+    }
 }
 button{
     padding:20px 45px 20px 45px;
@@ -74,12 +83,17 @@ button{
     font-weight: 700;
     margin-top:32px;
 }
+@media(max-width:992px){
+    button{
+
+    }
+}
 img{
     width:845px;
 }
 @media (max-width:992px){
     img{
-        width:100vw;
+       width:400px;
     }
 }
 </style>

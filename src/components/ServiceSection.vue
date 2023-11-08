@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="service-section">
    <div class="header">
     <h1>Why Choose Us</h1>
     <p>Want to know why we stand out from the rest? Here's why!</p>
@@ -45,13 +45,31 @@ export default {
     padding:0;
     margin:0;
 }
+.service-section{
+    max-width: 1280px;
+    margin:0 auto;
+}
+@media (max-width:992px){
+    .service-section{
+        max-width: 900px;
+        padding-top:24px;
+    }
+}
 h1{
    
     font-family:inter;
     font-size:40px;
     font-weight:700;
     color:#000;
-    padding-left:565px;
+    text-align: center;
+    padding-top:80px;
+}
+@media (max-width:992px){
+    h1{
+        text-align: center;
+        font-size:32px;
+        padding-top:40px;
+    }
 }
 .header p{
    font-family:inter;
@@ -59,15 +77,27 @@ h1{
    font-weight:500;
    color: #3a3a3a;
    padding-top:32px;
-   padding-left:440px;
+   text-align: center;
+}
+@media (max-width:992px){
+    .header-p{
+        font-size:16px;
+        text-align: center;
+    }
 }
 .services{
     display:flex;
     gap:74px;
     padding-top:62px;
-    padding-left:187px;
+    justify-content: center;
 }
-
+@media (max-width:992px){
+    .services{
+        flex-direction: column;
+        align-items: center;
+        gap:56px;
+    }
+}
 .contents{
     display:flex;
     flex-direction: column;
@@ -79,11 +109,22 @@ h1{
     width:303px;
     height:277px;
 }
+@media (max-width:992px){
+    .contents{
+          width:240px;
+          height:210px;
+    }
+}
 .title{
     font-family:inter;
     font-size:20px;
     font-weight: 700;
     color:#000;
+}
+@media (max-width:992px){
+    .title{
+        font-size:16px;
+    }
 }
 .content{
     width: 192px;
@@ -95,25 +136,53 @@ h1{
     line-height:32.4px;
     color:#3A3A3A;
 }
+@media (max-width:992px){
+    .content{
+        font-size:16px;
+    }
+}
 .details{
      display:flex;
-     padding-left:441px;
      padding-top:57px;
-     gap:72px; 
+     gap:72px;
+     justify-content: center; 
+}
+@media (max-width:992px){
+    .details{
+        gap:34px;
+        align-items: center;
+    }
 }
 .detail-contents{
     display:flex;
     flex-direction: column;
     gap:15px;
     align-items: center;
+    
 }
+
 h3{
     font-weight:700;
     font-size:32px;
+}
+@media (max-width:992px){
+    h3{
+        font-size:24px;
+    }
 }
 .detail-contents p {
     font-weight: 500;
     font-size:20px;
     color:#3A3A3A;
+}
+@media (max-width:992px){
+    .detail-contents p {
+        font-size:16px;
+    }
+}
+@media (max-width:992px){
+    img{
+        width:36px;
+    }
 }
 </style>

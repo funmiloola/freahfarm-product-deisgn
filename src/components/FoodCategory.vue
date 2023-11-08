@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div class="food-section">
    <section class="food-category">
-    <div>
+    <div class="image">
        <img src="@/assets/images/unsplash_NDyuR4Huig8.svg" >
     </div>
     <div class="food-details">
         <h1>Fresh Vegetables Every Day</h1>
         <p>Healthy life can not be overemphasized. Our vegetables are organically grown without no added chemicals so users would live a healthy life.</p>
+        <div class="btn">
         <button>Learn More</button>
+        </div>
     </div>
    </section>
   </div>
@@ -21,20 +23,31 @@ export default {
 }
 </script>
 <style scoped>
+
 .food-category{
     display: flex;
     align-items:center;
-    padding-left:22px;
+    max-width: 1280px;
+    margin:0 auto;
+    justify-content: space-between;
 }
-.food-details{
-    padding-left:103px;
+@media (max-width:992px){
+    .food-category{
+        display:block;
+    }
 }
 h1{
     width:342px;
-    height:104px;
     font-family:inter;
     font-weight:700;
     font-size:40px;
+}
+@media (max-width:992px){
+    h1{
+        font-size:36px;
+        text-align: center;
+        width:100%;
+    }
 }
 p{
     font-weight:500;
@@ -43,8 +56,15 @@ p{
     line-height:32.4px;
     width:442px;
 }
+@media (max-width:992px){
+    p{
+        font-size:16px;
+        text-align:center;
+        width:100%;
+    }
+}
 button{
-     padding: 20px 75px 20px 75px;
+     padding: 20px 45px 20px 45px;
     border:none;
     border-radius:8px;
     background: #008000;
@@ -53,5 +73,16 @@ button{
     font-weight: 700;
     font-size:18px;
     margin-top:32px;
+}
+@media (max-width:992px){
+    img{
+        width:400px;
+        display: block;
+        margin:0 auto;
+        padding-top:28px;
+    }
+}
+.btn{
+    text-align:center;
 }
 </style>

@@ -124,7 +124,9 @@ export default {
     }
 }
 .btn{
-    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
     padding-top:50px;
 }
 button{

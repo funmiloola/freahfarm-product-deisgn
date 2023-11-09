@@ -7,9 +7,7 @@
     <div class="food-details">
         <h1>Fresh Vegetables Every Day</h1>
         <p>Healthy life can not be overemphasized. Our vegetables are organically grown without no added chemicals so users would live a healthy life.</p>
-        <div class="btn">
         <button>Learn More</button>
-        </div>
     </div>
    </section>
   </div>
@@ -33,7 +31,11 @@ export default {
 }
 @media (max-width:992px){
     .food-category{
-        display:block;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-left:12px;
+        padding-right:12px;
     }
 }
 h1{
@@ -82,7 +84,12 @@ button{
         padding-top:28px;
     }
 }
-.btn{
-    text-align:center;
+@media (max-width:992px){
+    .food-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 </style>

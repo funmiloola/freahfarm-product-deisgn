@@ -4,9 +4,7 @@
     <div class="about-details">
         <h1>About Us</h1>
         <p>Organic food is grown without the use of synthetic chemicals, such as human-made pesticides and fertilizers, and does not contain genetically modified organisms (GMOs). Organic foods induce fresh produce, meats and dairy products as well as processed foods such as crackers, drinks, and frozen meals.</p>
-        <div class="btn">
         <button>Learn More</button>
-        </div>
     </div>
      <div class="about-images">
     <div class="image-section">
@@ -41,6 +39,8 @@ export default {
 @media (max-width:992px){
     .about{
         padding-top:80px;
+        padding-left:12px;
+        padding-right:12px;
     }
 }
  .about-section{
@@ -50,7 +50,18 @@ export default {
  }
  @media (max-width:992px){
     .about-section{
-       display: inline-block;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap:36px;
+    }
+ }
+ @media (max-width:992px){
+    .about-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
  }
 .about-images{
@@ -105,19 +116,7 @@ button{
     font-family:inter;
     font-weight: 700;
     font-size:18px;
-    
-    
-}
-.btn{
-    padding-top:32px;
-}
-@media (max-width:992px){
-    .btn{
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        padding-top:32px;
-    }
+    margin-top:32px;
 }
 @media(max-width:992px){
    #first-image{

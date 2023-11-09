@@ -51,8 +51,10 @@ export default {
 }
 @media (max-width:992px){
     .service-section{
-        max-width: 900px;
+        margin:0 auto;
         padding-top:24px;
+        padding-left:12px;
+        padding-right:12px;
     }
 }
 h1{

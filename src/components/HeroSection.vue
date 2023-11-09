@@ -31,8 +31,8 @@ export default {};
   gap: 5px;
   align-items: center;
   margin: 0 auto;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* padding-left: 8px;
+  padding-right: 8px; */
 }
 @media (max-width: 992px) {
   .hero-section {

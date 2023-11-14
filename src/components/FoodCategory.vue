@@ -78,7 +78,7 @@ button{
 }
 @media (max-width:992px){
     img{
-        width:400px;
+        width:375px;
         display: block;
         margin:0 auto;
         padding-top:28px;

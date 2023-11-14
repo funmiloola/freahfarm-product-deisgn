@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="hero-section">
     <div class="order">
       <h1>Just <span>Eat healthy</span> food to live a healthier Life</h1>
@@ -12,6 +13,7 @@
       <img src="@/assets/images/unsplash_xeTv9N2FjXA.svg" />
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,10 +41,9 @@ export default {};
     padding-left: 12px;
     padding-right: 12px;
     flex-direction: column;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     gap: 24px;
-    justify-content: center;
-    
   }
 }
 .order {
@@ -63,6 +64,11 @@ export default {};
 @media (max-width: 992px) {
   .image-section {
     width:100%;
+    padding-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:-20px;
   }
 }
 h1 {
@@ -113,10 +119,7 @@ button {
 }
 @media (max-width: 992px) {
   .image-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 36px;
+    
   }
 }
 img {
@@ -124,7 +127,7 @@ img {
 }
 @media (max-width: 992px) {
   img {
-    width: 400px;
+    width:375px;
   }
 }
 </style>

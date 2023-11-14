@@ -1,12 +1,13 @@
 <template>
   <div id="app">
    <header-section/>
-   <hero-section/>
+    <hero-section/> 
    <service-section/>
     <about-section/>
    <food-category/>
    <special-dishes/>
    <review-section/> 
+  
   </div>
 </template>
 
@@ -17,7 +18,7 @@
  import AboutSection from "./components/AboutSection.vue";
  import FoodCategory from "./components/FoodCategory.vue";
  import SpecialDishes from "./components/SpecialDishes.vue";
- import ReviewSection from "./components/ReviewSection.vue"
+ import ReviewSection from "./components/ReviewSection.vue";
 export default {
   name: 'App',
   components:{
@@ -27,7 +28,8 @@ export default {
     AboutSection,
     FoodCategory,
     SpecialDishes,
-    ReviewSection
+    ReviewSection,
+    
   }
 }
 </script>

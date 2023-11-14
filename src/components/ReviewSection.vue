@@ -66,7 +66,7 @@ export default {
       display:flex;
       padding-top:62px;
       justify-content: center;
-      gap:83px;
+      gap:20px;
  }
  @media (max-width:992px){
     .reviews{
@@ -183,6 +183,11 @@ export default {
     border:1px solid hsla(0, 0%, 23%, 0.2);
     border-radius: 8px;
     outline: none;
+ }
+ @media(max-width:992px){
+   input{
+      padding-right:100px;
+   }
  }
  input::placeholder{
     font-size:20px;

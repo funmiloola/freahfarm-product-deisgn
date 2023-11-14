@@ -148,11 +148,13 @@ h1{
      padding-top:57px;
      gap:72px;
      justify-content: center; 
+     align-items: center;
 }
 @media (max-width:992px){
     .details{
         gap:34px;
         align-items: center;
+        justify-content: center;
     }
 }
 .detail-contents{
@@ -160,12 +162,19 @@ h1{
     flex-direction: column;
     gap:15px;
     align-items: center;
-    
 }
-
+@media (max-width:992px){
+    .detail-contents{
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:center;
+    }
+}
 h3{
     font-weight:700;
     font-size:32px;
+    font-family:inter;
 }
 @media (max-width:992px){
     h3{
@@ -176,6 +185,7 @@ h3{
     font-weight: 500;
     font-size:20px;
     color:#3A3A3A;
+    font-family:inter;
 }
 @media (max-width:992px){
     .detail-contents p {

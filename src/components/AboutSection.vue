@@ -12,7 +12,7 @@
     <img src="@/assets/images/Rectangle 8.svg" id="second-image">
     </div>
     <div class="image">
-        <img src="@/assets/images/Rectangle 7.svg">
+        <img src="@/assets/images/Rectangle 7.svg" id="third-image">
     </div>
      </div>
    </div>
@@ -32,18 +32,49 @@ export default {
     padding:0;
 }
 .about{
-    padding-top:132px;
-    padding-left:121px;
+   max-width: 1280px;
+   margin:0 auto;
+   padding-top:120px;
+}
+@media (max-width:992px){
+    .about{
+        padding-top:80px;
+        padding-left:12px;
+        padding-right:12px;
+    }
 }
  .about-section{
     display:flex;
     align-items:center;
     gap:58px;
  }
+ @media (max-width:992px){
+    .about-section{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap:36px;
+    }
+ }
+ @media (max-width:992px){
+    .about-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
 .about-images{
     display:flex;
     align-items: center;
     gap:21px;
+}
+@media(max-width:992px){
+   .about-images{
+    align-items: center;
+    justify-content: center;
+    padding-top:56px;
+   }
 }
 .image-section{
     display: flex;
@@ -56,6 +87,12 @@ h1{
     font-size:40px;
     font-family: inter;
 }
+@media (max-width:992px){
+    h1{
+        font-size:36px;
+        text-align: center;
+    }
+}
 p{
     font-family: inter;
     font-weight: 500;
@@ -64,8 +101,14 @@ p{
     color: #3a3a3a;
     line-height:32.4px;
 }
+@media (max-width:992px){
+    p{
+        font-size:16px;
+        text-align: center;
+    }
+}
 button{
-    padding: 20px 75px 20px 75px;
+    padding: 20px 45px 20px 45px;
     border:none;
     border-radius:8px;
     background: #008000;
@@ -74,7 +117,20 @@ button{
     font-weight: 700;
     font-size:18px;
     margin-top:32px;
-    
 }
-
+@media(max-width:992px){
+   #first-image{
+           width:130px;
+     }
+}
+@media(max-width:992px){
+   #second-image{
+           width:130px;
+     }
+}
+@media(max-width:992px){
+   #third-image{
+           width:170px;
+     }
+}
 </style>

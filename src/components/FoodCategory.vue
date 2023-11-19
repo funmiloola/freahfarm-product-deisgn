@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="food-section">
    <section class="food-category">
-    <div>
+    <div class="image">
        <img src="@/assets/images/unsplash_NDyuR4Huig8.svg" >
     </div>
     <div class="food-details">
@@ -21,20 +21,35 @@ export default {
 }
 </script>
 <style scoped>
+
 .food-category{
     display: flex;
     align-items:center;
-    padding-left:22px;
+    max-width: 1280px;
+    margin:0 auto;
+    justify-content: space-between;
 }
-.food-details{
-    padding-left:103px;
+@media (max-width:992px){
+    .food-category{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-left:12px;
+        padding-right:12px;
+    }
 }
 h1{
     width:342px;
-    height:104px;
     font-family:inter;
     font-weight:700;
     font-size:40px;
+}
+@media (max-width:992px){
+    h1{
+        font-size:36px;
+        text-align: center;
+        width:100%;
+    }
 }
 p{
     font-weight:500;
@@ -43,8 +58,15 @@ p{
     line-height:32.4px;
     width:442px;
 }
+@media (max-width:992px){
+    p{
+        font-size:16px;
+        text-align:center;
+        width:100%;
+    }
+}
 button{
-     padding: 20px 75px 20px 75px;
+     padding: 20px 45px 20px 45px;
     border:none;
     border-radius:8px;
     background: #008000;
@@ -53,5 +75,21 @@ button{
     font-weight: 700;
     font-size:18px;
     margin-top:32px;
+}
+@media (max-width:992px){
+    img{
+        width:375px;
+        display: block;
+        margin:0 auto;
+        padding-top:28px;
+    }
+}
+@media (max-width:992px){
+    .food-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 </style>

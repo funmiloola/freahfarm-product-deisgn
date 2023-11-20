@@ -81,7 +81,8 @@ export default {
 }
 @media(max-width:992px){
    .about-images{
-    width:100%;
+    width:50%;
+    gap:21px;
     align-items: center;
     justify-content: center;
     padding-top:56px;
@@ -129,13 +130,13 @@ button{
     font-size:18px;
     margin-top:32px;
 }
+#first-image{
+    width:210px;
+}
 @media(max-width:992px){
    #first-image{
            width:130px;
      }
-}
-#first-image{
-    width:210px;
 }
 #second-image{
     width:210px;
@@ -145,12 +146,12 @@ button{
            width:130px;
      }
 }
-@media(max-width:992px){
-   #third-image{
-           width:170px;
-     }
-}
 #third-image{
     width:270px;
+}
+@media(max-width:992px){
+   #third-image{
+           width:180px;
+     }
 }
 </style>

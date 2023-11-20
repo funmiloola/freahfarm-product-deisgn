@@ -40,7 +40,6 @@ export default {
  .dishes-category{
     max-width:1280px;
     margin:0 auto;
-    
  }
  h1{
     font-size:40px;
@@ -72,6 +71,13 @@ export default {
     justify-content: center;
     padding-top:71px;
     gap:74px;
+    padding-right:12px;
+    padding-left:12px;
+ }
+ @media (max-width:1200px){
+    .about-dishes{
+        gap:24px;
+    }
  }
  @media (max-width:992px){
     .about-dishes{

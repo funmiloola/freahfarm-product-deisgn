@@ -21,12 +21,15 @@ export default {
 }
 </script>
 <style scoped>
-
+.food-section{
+    padding-right:16px;
+    padding-left:16px;
+     max-width: 1280px;
+    margin:0 auto;
+}
 .food-category{
     display: flex;
     align-items:center;
-    max-width: 1280px;
-    margin:0 auto;
     justify-content: space-between;
    
 }
@@ -40,10 +43,7 @@ export default {
     }
 }
 h1{
-    /* width:322px;
-    max-width:342px; */
-    /* min-width:122px; */
-    padding-right:72px;
+    /* padding-right:72px; */
     font-family:inter;
     font-weight:700;
     font-size:40px;
@@ -58,7 +58,7 @@ h1{
     }
 }
 p{
-    padding-right:114px;
+    /* padding-right:54px; */
     font-weight:500;
     font-size:20px;
     font-family:inter;
@@ -73,6 +73,22 @@ p{
         /* width:100%; */
     }
 }
+image{
+    width:50%;
+}
+.food-details{
+    width:50%;
+}
+@media (max-width:992px){
+    image{
+        width:100%;
+    }
+}
+@media (max-width:992px){
+    .food-details{
+        width:100%;
+    }
+}
 button{
      padding: 20px 45px 20px 45px;
     border:none;
@@ -83,6 +99,9 @@ button{
     font-weight: 700;
     font-size:18px;
     margin-top:32px;
+}
+img{
+    width:600px;
 }
 @media (max-width:992px){
     img{

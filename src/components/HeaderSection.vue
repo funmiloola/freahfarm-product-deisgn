@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="nav">
     <nav>
       <div class="nav-section">
         <img src="@/assets/images/FreshFarm.svg" alt="" class="logo" />
@@ -64,15 +64,19 @@ export default {
   padding: 0;
   margin: 0;
 }
+.nav{
+max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:10px;
+  padding-right:10px;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
- 
+  
 }
 @media (max-width: 992px) {
   nav {

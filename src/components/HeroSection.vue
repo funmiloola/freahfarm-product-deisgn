@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="hero">
   <div class="hero-section">
     <div class="order">
       <h1>Just <span>Eat healthy</span> food to live a healthier Life</h1>
@@ -26,13 +26,17 @@ export default {};
   margin: 0;
   padding: 0;
 }
+.hero{
+max-width: 1280px;
+ margin: 0 auto;
+  padding-left:16px;
+  padding-right:16px;
+}
 .hero-section {
   display: flex;
-  max-width: 1280px;
   justify-content: space-between;
-  gap: 5px;
   align-items: center;
-  margin: 0 auto;
+ 
   
 }
 @media (max-width: 992px) {
@@ -122,7 +126,12 @@ button {
   }
 }
 img {
-  width: 520px;
+  width: 600px;
+}
+@media (max-width:1200px){
+  img{
+    width:500px;
+  }
 }
 @media (max-width: 992px) {
   img {

@@ -43,7 +43,7 @@ export default {
 .review-section{
     max-width:1280px;
     margin:0 auto;
-    
+   
 }
 /* @media (max-width:992px){
     .review-section{
@@ -68,6 +68,8 @@ export default {
       padding-top:62px;
       justify-content: center;
       gap:20px;
+      padding-left:16px;
+      padding-right:16px;
  }
  @media (max-width:992px){
     .reviews{

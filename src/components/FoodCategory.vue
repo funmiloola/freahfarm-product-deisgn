@@ -28,7 +28,7 @@ export default {
     max-width: 1280px;
     margin:0 auto;
     justify-content: space-between;
-    border:1px solid red;
+   
 }
 @media (max-width:992px){
     .food-category{

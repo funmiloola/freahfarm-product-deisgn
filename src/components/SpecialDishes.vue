@@ -40,7 +40,7 @@ export default {
  .dishes-category{
     max-width:1280px;
     margin:0 auto;
-    border:1px solid red;
+    
  }
  h1{
     font-size:40px;

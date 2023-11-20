@@ -33,7 +33,7 @@ export default {};
   gap: 5px;
   align-items: center;
   margin: 0 auto;
-  border:1px solid red;
+  
 }
 @media (max-width: 992px) {
   .hero-section {

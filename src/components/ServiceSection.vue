@@ -48,7 +48,7 @@ export default {
 .service-section{
     max-width: 1280px;
     margin:0 auto;
-    border:1px solid red;
+    
 }
 @media (max-width:992px){
     .service-section{

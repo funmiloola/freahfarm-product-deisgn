@@ -63,6 +63,7 @@ p{
     font-size:20px;
     font-family:inter;
     line-height:32.4px;
+    color:#3a3a3a;
     /* width:422px; */
 }
 @media (max-width:992px){

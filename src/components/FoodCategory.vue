@@ -21,13 +21,17 @@ export default {
 }
 </script>
 <style scoped>
-
+.food-section{
+    padding-right:16px;
+    padding-left:16px;
+     max-width: 1280px;
+    margin:0 auto;
+}
 .food-category{
     display: flex;
     align-items:center;
-    max-width: 1280px;
-    margin:0 auto;
     justify-content: space-between;
+   
 }
 @media (max-width:992px){
     .food-category{
@@ -39,29 +43,49 @@ export default {
     }
 }
 h1{
-    width:342px;
+    /* padding-right:72px; */
     font-family:inter;
     font-weight:700;
     font-size:40px;
+    
 }
 @media (max-width:992px){
     h1{
         font-size:36px;
         text-align: center;
-        width:100%;
+        padding-right:0;
+        /* width:100%; */
     }
 }
 p{
+    /* padding-right:54px; */
     font-weight:500;
     font-size:20px;
     font-family:inter;
     line-height:32.4px;
-    width:442px;
+    /* width:422px; */
 }
 @media (max-width:992px){
     p{
         font-size:16px;
         text-align:center;
+        padding-right:0;
+        /* width:100%; */
+    }
+}
+image{
+    width:50%;
+}
+.food-details{
+    width:50%;
+}
+@media (max-width:992px){
+    image{
+        width:100%;
+    }
+}
+@media (max-width:992px){
+    .food-details{
         width:100%;
     }
 }
@@ -76,9 +100,13 @@ button{
     font-size:18px;
     margin-top:32px;
 }
+img{
+    width:600px;
+}
 @media (max-width:992px){
     img{
         width:375px;
+        min-width:253px;
         display: block;
         margin:0 auto;
         padding-top:28px;

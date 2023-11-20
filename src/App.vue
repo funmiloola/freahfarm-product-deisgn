@@ -7,7 +7,7 @@
    <food-category/>
    <special-dishes/>
    <review-section/> 
-  
+   <footer-section/>
   </div>
 </template>
 
@@ -19,6 +19,7 @@
  import FoodCategory from "./components/FoodCategory.vue";
  import SpecialDishes from "./components/SpecialDishes.vue";
  import ReviewSection from "./components/ReviewSection.vue";
+ import FooterSection from "./components/FooterSection.vue";
 export default {
   name: 'App',
   components:{
@@ -29,7 +30,7 @@ export default {
     FoodCategory,
     SpecialDishes,
     ReviewSection,
-    
+    FooterSection
   }
 }
 </script>

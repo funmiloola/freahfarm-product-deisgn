@@ -10,7 +10,7 @@
     </div>
     <footer>
       <div>
-        <p><img src="@/assets/images/Vector (1).svg" alt="">2022 FreshFarm</p>
+        <p><img src="@/assets/images/Vector (1).svg" alt="">{{thisYear}} FreshFarm</p>
       </div>
       <ul>
         <li v-for="(policy,index) in policies" :key="index">{{policy}}</li>
@@ -26,12 +26,17 @@ export default {
     return{
       details:['Home','Menu','About Us','Contact Us'],
       icons:[require('@/assets/images/Linkedin.svg'),require('@/assets/images/Facebook.svg'),require('@/assets/Twitter.svg'),require('@/assets/images/Instagram.svg')],
-      policies:['Privacy Policy','Terms & Conditions','Cookies Policy']
+      policies:['Privacy Policy','Terms & Conditions','Cookies Policy'],
+      
     }
-  }
+  },
+   computed:{
+     thisYear(){
+      return new Date().getFullYear();
+     }
+    }
 }
 </script>
-
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Inter:wght@400;500;700&family=Josefin+Sans:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;700&family=Lexend+Deca&family=Manrope:wght@800&family=Pacifico&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap');
 *{
@@ -41,7 +46,7 @@ export default {
 .footer{
   border:1px solid #f5f5f5;
   width:100%;
-  max-width: 1440px;
+  max-width: 1990px;
   height: 285.218px;
   background: #f5f5f5;
   margin:120px 0px 0px 0px;
@@ -105,7 +110,7 @@ export default {
  }
  @media (max-width:992px){
   footer{
-    flex-direction:column;
+    flex-direction:column-reverse;
     gap:24px;
     padding-left:0;
     padding-right:0;

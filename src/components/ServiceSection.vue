@@ -108,7 +108,7 @@ h1{
     border:1px solid hsla(0, 0%, 23%, 0.1);
     border-radius:8px;
     padding-top:23px;
-    width:303px;
+    /* width:303px; */
     height:277px;
 }
 @media (max-width:992px){

@@ -36,7 +36,7 @@ export default {
    margin:0 auto;
    padding-top:120px;
    padding-left:16px;
-   padding-right:16px;
+   padding-right:32px;
 }
 @media (max-width:992px){
     .about{
@@ -49,7 +49,8 @@ export default {
     display:flex;
     align-items:center;
    justify-content: space-between;
-   gap:224px;
+   gap:54px;
+
    
  }
  @media (max-width:992px){
@@ -134,10 +135,10 @@ button{
      }
 }
 #first-image{
-    width:200px;
+    width:210px;
 }
 #second-image{
-    width:200px;
+    width:210px;
 }
 @media(max-width:992px){
    #second-image{

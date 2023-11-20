@@ -72,6 +72,7 @@ nav {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  border:1px solid red;
 }
 @media (max-width: 992px) {
   nav {

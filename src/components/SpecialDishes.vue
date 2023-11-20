@@ -40,6 +40,7 @@ export default {
  .dishes-category{
     max-width:1280px;
     margin:0 auto;
+    border:1px solid red;
  }
  h1{
     font-size:40px;
@@ -83,7 +84,7 @@ export default {
     border:1px solid hsla(0,0%,23%,0.1);
     border-radius: 8px;
     text-align: center;
-    width:328px;
+    /* width:328px; */
     
  }
  @media (max-width:992px){
@@ -94,6 +95,7 @@ export default {
  }
  .dishes-details img{
     padding-top:39px;
+    width:250px;
  }
   @media (max-width:992px){
     .dishes-details img{
@@ -112,7 +114,7 @@ export default {
     }
 }
 .dish-desc{
-    padding:18px 50.5px;
+    padding:18px 40.5px;
     width:227px;
     font-size:14px;
     line-height: 32.4px;

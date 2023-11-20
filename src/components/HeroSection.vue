@@ -33,8 +33,7 @@ export default {};
   gap: 5px;
   align-items: center;
   margin: 0 auto;
-  /* padding-left: 8px;
-  padding-right: 8px; */
+  border:1px solid red;
 }
 @media (max-width: 992px) {
   .hero-section {
@@ -123,11 +122,12 @@ button {
   }
 }
 img {
-  width: 650px;
+  width: 520px;
 }
 @media (max-width: 992px) {
   img {
     width:375px;
+    min-width:253px;
   }
 }
 </style>

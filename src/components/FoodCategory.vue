@@ -28,6 +28,7 @@ export default {
     max-width: 1280px;
     margin:0 auto;
     justify-content: space-between;
+    border:1px solid red;
 }
 @media (max-width:992px){
     .food-category{
@@ -39,30 +40,37 @@ export default {
     }
 }
 h1{
-    width:342px;
+    /* width:322px;
+    max-width:342px; */
+    /* min-width:122px; */
+    padding-right:72px;
     font-family:inter;
     font-weight:700;
     font-size:40px;
+    
 }
 @media (max-width:992px){
     h1{
         font-size:36px;
         text-align: center;
-        width:100%;
+        padding-right:0;
+        /* width:100%; */
     }
 }
 p{
+    padding-right:114px;
     font-weight:500;
     font-size:20px;
     font-family:inter;
     line-height:32.4px;
-    width:442px;
+    /* width:422px; */
 }
 @media (max-width:992px){
     p{
         font-size:16px;
         text-align:center;
-        width:100%;
+        padding-right:0;
+        /* width:100%; */
     }
 }
 button{
@@ -79,6 +87,7 @@ button{
 @media (max-width:992px){
     img{
         width:375px;
+        min-width:253px;
         display: block;
         margin:0 auto;
         padding-top:28px;

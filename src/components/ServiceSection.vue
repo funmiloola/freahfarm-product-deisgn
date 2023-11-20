@@ -48,6 +48,7 @@ export default {
 .service-section{
     max-width: 1280px;
     margin:0 auto;
+    border:1px solid red;
 }
 @media (max-width:992px){
     .service-section{
@@ -108,7 +109,7 @@ h1{
     border:1px solid hsla(0, 0%, 23%, 0.1);
     border-radius:8px;
     padding-top:23px;
-    width:303px;
+    /* width:303px; */
     height:277px;
 }
 @media (max-width:992px){

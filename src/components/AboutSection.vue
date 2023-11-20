@@ -35,6 +35,7 @@ export default {
    max-width: 1280px;
    margin:0 auto;
    padding-top:120px;
+   border:1px solid red;
 }
 @media (max-width:992px){
     .about{

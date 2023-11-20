@@ -43,12 +43,13 @@ export default {
 .review-section{
     max-width:1280px;
     margin:0 auto;
+    border:1px solid red;
 }
-@media (max-width:992px){
+/* @media (max-width:992px){
     .review-section{
-        max-width:
+        max-width:900px;
     }
-}
+} */
  h1{
     text-align:center;
     padding-top:120px;
@@ -117,7 +118,7 @@ export default {
     font-weight:500;
  }
  .reviews p {
-     width:527px;
+     /* width:527px; */
      color:#3a3a3a;
      font-size:14px;
      line-height:32.4px;
@@ -187,6 +188,8 @@ export default {
  @media(max-width:992px){
    input{
       padding-right:100px;
+      margin-left:10px;
+      margin-right:10px;
    }
  }
  input::placeholder{
@@ -212,6 +215,8 @@ export default {
  @media (max-width:992px){
     button{
         font-size: 16px;
+        margin-left:10px;
+        margin-right:10px;
     }
  }
  @media (max-width:992px){
